@@ -7,3 +7,10 @@ $ python manage.py loaddata category
 
 $ python manage.py runserver
 ```
+
+```
+# ID/Pass
+admin   password
+pytaro  password
+pyjiro  password
+```

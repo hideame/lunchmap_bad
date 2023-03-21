@@ -1,6 +1,6 @@
 venv
-#settings.py
+# settings.py
 db.sqlite3
-shop_detail.html
+# shop_detail.html
 /node_modules
 /visual_regression_test

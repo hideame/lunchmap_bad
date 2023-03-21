@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>{{ shop.name }}</h1>
+<div>
+  <p>{{ shop.category.name }}</p>
+  <p>{{ shop.address }}</p>
+  <p>※ 今回はGoogle Mapは削除</p>
+</div>
+<div>
+  <a href="{% url 'main:list' %}" class="btn btn-outline-secondary">一覧</a>
+  {% if request.user.id == object.author_id %}
+  <a href="{% url 'main:update' shop.pk %}" class="btn btn-outline-warning">編集</a>
+  <a href="{% url 'main:delete' shop.pk %}" class="btn btn-outline-warning">削除</a>
+  {% endif %}
+</div>
+{% endblock %}
